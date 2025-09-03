@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import PixelOverlay from "./components/PixelOverlay";
+import Stats from "./components/Stats";
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
       <Navbar />
       <Hero />
       <PixelOverlay />
+      <Stats />
     </div>
   );
 }
