@@ -19,7 +19,7 @@ export default function Stats() {
         bg-[linear-gradient(180deg,#0E6A56_0%,#0A705D_50%,#0E6A56_100%)]  /* verde con leve bisel vertical */
       "
     >
-      {/* filete inferior crema */}
+      
       <div className="absolute inset-x-0 bottom-0 h-[6px] bg-brand-beige/92 pointer-events-none" />
 
       <div className="container-1100 grid grid-cols-2 md:grid-cols-4 gap-10 py-8 md:py-10">
