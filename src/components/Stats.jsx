@@ -22,20 +22,47 @@ export default function Stats() {
       
       <div className="absolute inset-x-0 bottom-0 h-[6px] bg-brand-beige/92 pointer-events-none" />
 
-      <div className="container-1100 grid grid-cols-2 md:grid-cols-4 gap-10 py-8 md:py-10">
-        {items.map(({ kpi, label, Icon, bump }) => {
-          const bumpTop =
-            "before:content-[''] before:absolute before:w-[96px] before:h-[96px] before:bg-black/12 before:rounded-full before:top-[-48px] before:left-1/2 before:-translate-x-1/2";
-          const bumpBottom =
-            "after:content-[''] after:absolute  after:w-[96px]  after:h-[96px]  after:bg-black/12  after:rounded-full  after:bottom-[-48px] after:left-1/2 after:-translate-x-1/2";
+      {/* Sombras semicirculares alineadas con cada icono */}
+      <div className="absolute top-0 left-0 w-full h-12 pointer-events-none">
+        {/* Sombra superior - segundo elemento (Money Donated) */}
+        <div 
+          className="absolute -top-12 left-[36.5%] w-10 h-20 bg-black/20 rounded-full transform -translate-x-1/2"
+          style={{
+            clipPath: 'polygon(0 50%, 100% 50%, 100% 100%, 0 100%)'
+          }}
+        />
+        {/* Sombra superior - cuarto elemento (Charity in last Year) */}
+        <div 
+          className="absolute -top-12 left-[69.3%] w-10 h-20 bg-black/20 rounded-full transform -translate-x-1/2"
+          style={{
+            clipPath: 'polygon(0 50%, 100% 50%, 100% 100%, 0 100%)'
+          }}
+        />
+      </div>
 
+      <div className="absolute bottom-0 left-0 w-full h-12 pointer-events-none">
+        {/* Sombra inferior - primer elemento (Donation Received) */}
+        <div 
+          className="absolute -bottom-12 left-[20.2%] w-10 h-20 bg-black/20 rounded-full transform -translate-x-1/2"
+          style={{
+            clipPath: 'polygon(0 0%, 100% 0%, 100% 50%, 0 50%)'
+          }}
+        />
+        {/* Sombra inferior - tercer elemento (Active Campaigns) */}
+        <div 
+          className="absolute -bottom-12 left-[52.6%] w-10 h-20 bg-black/20 rounded-full transform -translate-x-1/2"
+          style={{
+            clipPath: 'polygon(0 0%, 100% 0%, 100% 50%, 0 50%)'
+          }}
+        />
+      </div>
+
+      <div className="container-1100 grid grid-cols-2 md:grid-cols-4 gap-10 py-8 md:py-10">
+        {items.map(({ kpi, label, Icon }) => {
           return (
             <div
               key={label}
-              className={`
-                relative z-0 flex items-center gap-4 px-2
-                ${bump === "top" ? bumpTop : bumpBottom}
-              `}
+              className="relative flex items-center gap-4 px-2"
             >
               <div className="relative z-10 shrink-0">
                 {Icon && <Icon className="w-9 h-9 md:w-10 md:h-10 text-white" />}

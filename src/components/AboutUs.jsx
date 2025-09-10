@@ -53,6 +53,9 @@ const AboutUs = () => {
             </a>
           </div>
         </div>
+        
+        {/* Bottom Border Line */}
+        <div className="mt-24 border-t border-gray-300"></div>
       </div>
     </section>
   );
