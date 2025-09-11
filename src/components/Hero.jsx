@@ -68,10 +68,11 @@ export default function Hero() {
         {/* Image container sits exactly at the split (no negative margin) */}
         <div className="w-full max-w-md ml-0 relative z-10">
           <div className="aspect-[3/4] rounded-lg overflow-hidden bg-orange-200 shadow-lg">
-            {/* Aquí pondrás la imagen real */}
-            <div className="w-full h-full bg-gradient-to-br from-orange-300 to-orange-400 flex items-center justify-center text-white">
-              <span className="text-sm opacity-80">Imagen del niño y adulto</span>
-            </div>
+            <img 
+              src="/PadreEHijo.jpeg" 
+              alt="Padre e Hijo" 
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>

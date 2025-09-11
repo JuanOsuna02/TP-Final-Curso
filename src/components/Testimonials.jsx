@@ -9,7 +9,7 @@ const Testimonials = () => {
       name: "Mustafa Kamal",
       role: "Ceo, Toogle",
       quote: "We're very happy that the challenge went well, and we're grateful that we have a partner in Charity Challenge whom we could trust to take the best possible care of our supporters.",
-      image: "/man-6653177_1280.jpg",
+      image: "/Opinion1.png",
       rating: 5
     },
     {
@@ -17,7 +17,7 @@ const Testimonials = () => {
       name: "Sarah Johnson",
       role: "Volunteer",
       quote: "Professional, reliable, and truly committed to making a difference. Highly recommend their services to everyone in need of support.",
-      image: "/man-6653177_1280.jpg",
+      image: "/Opinion2.png",
       rating: 5
     },
     {
@@ -25,7 +25,7 @@ const Testimonials = () => {
       name: "Michael Brown",
       role: "Beneficiary",
       quote: "Exceptional work and dedication. They transformed our community and we're forever thankful for their efforts and support.",
-      image: "/man-6653177_1280.jpg",
+      image: "/Opinion3.png",
       rating: 5
     }
   ];
@@ -75,6 +75,10 @@ const Testimonials = () => {
                     src={reviews[currentReview].image} 
                     alt={reviews[currentReview].name}
                     className="w-full h-full object-cover"
+                    style={{
+                      objectPosition: 'center bottom',
+                      transform: 'translateY(20px)'
+                    }}
                   />
                 </div>
               </div>

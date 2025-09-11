@@ -18,11 +18,11 @@ const AboutUs = () => {
                   borderBottomRightRadius: '0'
                 }}
               >
-                {/* Imagen que ocupa toda la zona amarilla */}
-                <div className="w-full h-full bg-amber-200 flex items-center justify-center">
+                {/* Imagen que ocupa toda la zona con fondo marrón/beige */}
+                <div className="w-full h-full flex items-center justify-center" style={{ backgroundColor: '#D2B48C' }}>
                   <img 
-                    src="/man-6653177_1280.jpg" 
-                    alt="Voluntario" 
+                    src="/AbouUsIMG.png" 
+                    alt="About Us" 
                     className="w-full h-full object-cover"
                   />
                 </div>

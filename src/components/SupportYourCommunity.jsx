@@ -5,17 +5,17 @@ export default function SupportYourCommunity() {
     {
       id: 1,
       title: "Covid - 19",
-      image: "/covid-campaign.jpg", // Imagen de jeringas con líquido púrpura
+      image: "/VacunaCovid.jpg", // Imagen de vacuna COVID-19
     },
     {
       id: 2,
       title: "Food Bank",
-      image: "/food-bank-campaign.jpg", // Imagen de manos intercambiando bolsa con vegetales
+      image: "/FoodBank.jpg", // Imagen de banco de alimentos
     },
     {
       id: 3,
       title: "Safe Water",
-      image: "/safe-water-campaign.jpg", // Imagen de botella de agua con corcho
+      image: "/Water.jpeg", // Imagen de agua segura
     }
   ];
 
@@ -44,16 +44,14 @@ export default function SupportYourCommunity() {
               <div key={campaign.id} className={`bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow ${isSafeWater ? 'md:relative md:-translate-y-52' : ''} ${isCovidOrFood ? 'h-[350px] md:relative md:translate-y-36' : ''}`}>
                 {/* Campaign Image */}
                 <div className={`${isSafeWater ? 'aspect-[4/6]' : 'aspect-[4/3]'} bg-gray-100 relative overflow-hidden`}>
-                  <div className="w-full h-full flex items-center justify-center text-gray-400">
-                    <span className="text-sm">Imagen: {campaign.title}</span>
-                  </div>
-                  {/* Placeholder for actual images */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-16 h-16 bg-gray-400 rounded-full mb-2 mx-auto"></div>
-                      <span className="text-xs text-gray-600">{campaign.title}</span>
-                    </div>
-                  </div>
+                  <img 
+                    src={campaign.image} 
+                    alt={campaign.title}
+                    className="w-full h-full object-cover"
+                    style={{
+                      objectPosition: campaign.title === "Covid - 19" ? 'center bottom' : 'center center'
+                    }}
+                  />
                 </div>
                 
                 {/* Campaign Title */}

@@ -26,15 +26,17 @@ export default function Stats() {
       <div className="absolute top-0 left-0 w-full h-12 pointer-events-none">
         {/* Sombra superior - segundo elemento (Money Donated) */}
         <div 
-          className="absolute -top-12 left-[36.5%] w-10 h-20 bg-black/20 rounded-full transform -translate-x-1/2"
+          className="absolute -top-12 w-10 h-20 bg-black/20 rounded-full transform -translate-x-1/2"
           style={{
+            left: '41%',
             clipPath: 'polygon(0 50%, 100% 50%, 100% 100%, 0 100%)'
           }}
         />
         {/* Sombra superior - cuarto elemento (Charity in last Year) */}
         <div 
-          className="absolute -top-12 left-[69.3%] w-10 h-20 bg-black/20 rounded-full transform -translate-x-1/2"
+          className="absolute -top-12 w-10 h-20 bg-black/20 rounded-full transform -translate-x-1/2"
           style={{
+            left: '63%',
             clipPath: 'polygon(0 50%, 100% 50%, 100% 100%, 0 100%)'
           }}
         />
@@ -43,15 +45,17 @@ export default function Stats() {
       <div className="absolute bottom-0 left-0 w-full h-12 pointer-events-none">
         {/* Sombra inferior - primer elemento (Donation Received) */}
         <div 
-          className="absolute -bottom-12 left-[20.2%] w-10 h-20 bg-black/20 rounded-full transform -translate-x-1/2"
+          className="absolute -bottom-12 w-10 h-20 bg-black/20 rounded-full transform -translate-x-1/2"
           style={{
+            left: '30.1%',
             clipPath: 'polygon(0 0%, 100% 0%, 100% 50%, 0 50%)'
           }}
         />
         {/* Sombra inferior - tercer elemento (Active Campaigns) */}
         <div 
-          className="absolute -bottom-12 left-[52.6%] w-10 h-20 bg-black/20 rounded-full transform -translate-x-1/2"
+          className="absolute -bottom-12 w-10 h-20 bg-black/20 rounded-full transform -translate-x-1/2"
           style={{
+            left: '51.6%',
             clipPath: 'polygon(0 0%, 100% 0%, 100% 50%, 0 50%)'
           }}
         />
