@@ -32,15 +32,15 @@ const AboutUs = () => {
 
           {/* Contenido de texto a la derecha */}
           <div className="w-full lg:w-1/2 bg-white p-8 lg:p-12">
-            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl lg:text-5xl font-recoleta font-semibold text-gray-900 mb-4">
               About Us
             </h2>
             
             {/* Línea separadora */}
-            <div className="w-16 h-1 bg-gray-800 mb-6"></div>
+            <div className="w-16 h-0.5 bg-gray-800 mb-6"></div>
             
             {/* Párrafo de texto */}
-            <p className="text-gray-700 text-lg leading-relaxed mb-6">
+            <p className="text-gray-700 text-lg leading-relaxed mb-6 font-ultine">
               The legal definition of a charitable organization (and of charity) varies between countries and in some instances regions of the country. The regulation, the tax treatment, and the way in which charity law affects charitable organizations also vary.
             </p>
             

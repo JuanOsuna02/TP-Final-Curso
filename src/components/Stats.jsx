@@ -28,7 +28,7 @@ export default function Stats() {
         <div 
           className="absolute -top-12 w-10 h-20 bg-black/20 rounded-full transform -translate-x-1/2"
           style={{
-            left: '41%',
+            left: '40.1%',
             clipPath: 'polygon(0 50%, 100% 50%, 100% 100%, 0 100%)'
           }}
         />
@@ -36,7 +36,7 @@ export default function Stats() {
         <div 
           className="absolute -top-12 w-10 h-20 bg-black/20 rounded-full transform -translate-x-1/2"
           style={{
-            left: '63%',
+            left: '64.2%',
             clipPath: 'polygon(0 50%, 100% 50%, 100% 100%, 0 100%)'
           }}
         />
@@ -47,7 +47,7 @@ export default function Stats() {
         <div 
           className="absolute -bottom-12 w-10 h-20 bg-black/20 rounded-full transform -translate-x-1/2"
           style={{
-            left: '30.1%',
+            left: '28.1%',
             clipPath: 'polygon(0 0%, 100% 0%, 100% 50%, 0 50%)'
           }}
         />
@@ -55,7 +55,7 @@ export default function Stats() {
         <div 
           className="absolute -bottom-12 w-10 h-20 bg-black/20 rounded-full transform -translate-x-1/2"
           style={{
-            left: '51.6%',
+            left: '51.9%',
             clipPath: 'polygon(0 0%, 100% 0%, 100% 50%, 0 50%)'
           }}
         />

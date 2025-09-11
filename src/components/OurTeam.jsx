@@ -37,7 +37,7 @@ const OurTeam = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-brand-dark font-display leading-tight">
+          <h2 className="text-4xl md:text-5xl font-recoleta font-semibold text-brand-dark leading-tight">
             Our Team
           </h2>
           <div className="w-16 h-0.5 bg-brand-green mx-auto mt-4"></div>
@@ -83,10 +83,10 @@ const OurTeam = () => {
               </div>
 
               {/* Team Member Info */}
-              <h3 className="text-xl font-semibold text-brand-dark mb-1 font-serif">
+              <h3 className="text-xl font-recoleta font-semibold text-brand-dark mb-1">
                 {member.name}
               </h3>
-              <p className="text-sm text-brand-dark/70 font-sans">
+              <p className="text-sm text-brand-dark/70 font-ultine">
                 {member.position}
               </p>
             </div>

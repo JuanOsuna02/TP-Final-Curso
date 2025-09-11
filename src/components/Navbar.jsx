@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-50 grid grid-cols-2">
+    <header className="grid grid-cols-2">
       {/* Left side - Logo on beige background */}
       <div className="bg-brand-beige flex items-center justify-start pl-8 h-16">
         <div className="flex items-center">

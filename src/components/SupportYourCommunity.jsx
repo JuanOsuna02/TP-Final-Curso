@@ -24,11 +24,11 @@ export default function SupportYourCommunity() {
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="mb-0">
-          <h2 className="text-4xl md:text-5xl font-serif text-brand-dark mb-4 relative">
+          <h2 className="text-4xl md:text-5xl font-recoleta font-semibold text-brand-dark mb-4 relative">
             Support Your<br />Community
             <div className="w-16 h-0.5 bg-brand-dark mt-8"></div>
           </h2>
-          <p className="text-slate-600 text-lg max-w-2xl leading-relaxed mb-0 mt-8">
+          <p className="text-slate-600 text-lg max-w-2xl leading-relaxed mb-0 mt-8 font-ultine">
             The legal definition of a charitable organization (and of charity) varies between countries and in charity law affects charitable organizations also vary.
           </p>
         </div>
@@ -56,10 +56,10 @@ export default function SupportYourCommunity() {
                 
                 {/* Campaign Title */}
                 <div className={`p-6 ${isCovidOrFood ? 'h-44' : ''}`}>
-                  <h3 className="text-xl font-semibold text-brand-dark mb-2">
+                  <h3 className="text-xl font-recoleta font-semibold text-brand-dark mb-2">
                     {campaign.title}
                   </h3>
-                  <p className="text-sm text-slate-600">
+                  <p className="text-sm text-slate-600 font-ultine">
                     {campaign.description}
                   </p>
                 </div>
@@ -75,7 +75,7 @@ export default function SupportYourCommunity() {
           <div className="flex justify-center"> {/* Centrado en la columna de Safe Water */}
             <a 
               href="#campaigns" 
-              className="text-brand-dark font-medium hover:text-brand-green transition-colors underline decoration-1 underline-offset-4"
+              className="text-brand-dark font-medium hover:text-brand-green transition-colors underline decoration-1 underline-offset-4 font-ultine"
             >
               View All Campaign
             </a>

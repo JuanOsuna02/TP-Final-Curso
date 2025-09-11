@@ -6,6 +6,8 @@ export default {
       fontFamily: {
         display: ['"Cormorant Garamond"', 'serif'],
         sans: ['Inter', 'system-ui', 'sans-serif'],
+        'recoleta': ['"Recoleta"', 'serif'],
+        'ultine': ['"Ultine"', 'sans-serif'],
       },
       colors: {
         brand: {

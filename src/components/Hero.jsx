@@ -4,12 +4,12 @@ export default function Hero() {
       {/* Left side - Content on beige background */}
       <div className="bg-brand-beige flex items-center justify-center px-8 py-16 relative">
         <div className="max-w-lg">
-          <h1 className="text-5xl md:text-6xl font-display leading-[1.1] text-brand-dark mb-6 font-normal">
+          <h1 className="text-5xl md:text-6xl font-recoleta leading-[1.1] text-brand-dark mb-6 font-semibold">
             Charity Is An <br/> 
             Act Of A Soft <br/> 
             Heart.
           </h1>
-          <p className="text-slate-600 leading-relaxed mb-8 max-w-md">
+          <p className="text-slate-600 leading-relaxed mb-8 max-w-md font-ultine">
             We've spent the last 5 years helping over 25,000 
             teams just like yours create and sustain 
             successful online support.
@@ -56,9 +56,9 @@ export default function Hero() {
           
           {/* Social links */}
           <div className="flex gap-8 text-sm text-slate-600">
-            <div>Youtube</div>
-            <div>Facebook</div>
-            <div>Instagram</div>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-brand-green transition-colors">Youtube</a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-brand-green transition-colors">Facebook</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-brand-green transition-colors">Instagram</a>
           </div>
         </div>
       </div>

@@ -8,20 +8,31 @@ const DonateSection = () => {
         background: 'linear-gradient(180deg, #0E6A56 0%, #0A705D 50%, #0E6A56 100%)'
       }}
     >
-      {/* Decorative wavy lines */}
+      {/* Background with image overlay */}
+      <div 
+        className="absolute inset-0"
+        style={{
+          background: 'linear-gradient(180deg,#0E6A56_0%,#0A705D_50%,#0E6A56_100%)'
+        }}
+      ></div>
+      
+      {/* Image overlay with blend mode */}
       <div className="absolute inset-0 opacity-10">
-        <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <path d="M0,20 Q25,10 50,20 T100,20 L100,100 L0,100 Z" fill="white" />
-          <path d="M0,40 Q25,30 50,40 T100,40 L100,100 L0,100 Z" fill="white" />
-          <path d="M0,60 Q25,50 50,60 T100,100 L0,100 Z" fill="white" />
-        </svg>
+        <img 
+          src="/381824514_053f767c-f2ea-4454-ac77-d7673436c1ec.jpg" 
+          alt="Background pattern" 
+          className="w-full h-full object-cover"
+          style={{
+            mixBlendMode: 'overlay'
+          }}
+        />
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           {/* Left side - Text */}
           <div className="text-center lg:text-left mb-8 lg:mb-0">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-recoleta font-semibold text-white leading-tight">
               Let's Help Other With<br />
               Your Charity
             </h2>

@@ -87,14 +87,14 @@ const Testimonials = () => {
             {/* Contenido de texto a la derecha */}
             <div className="w-full lg:w-3/5 p-8 lg:p-12">
               {/* Cita */}
-              <blockquote className="text-gray-800 text-lg leading-relaxed mb-8">
+              <blockquote className="text-gray-800 text-lg leading-relaxed mb-8 font-ultine">
                 "{reviews[currentReview].quote}"
               </blockquote>
               
               {/* Información del cliente */}
               <div className="mb-8">
-                <h4 className="font-bold text-gray-900 text-xl mb-1">{reviews[currentReview].name}</h4>
-                <p className="text-gray-600 text-lg">{reviews[currentReview].role}</p>
+                <h4 className="font-recoleta font-semibold text-gray-900 text-xl mb-1">{reviews[currentReview].name}</h4>
+                <p className="text-gray-600 text-lg font-ultine">{reviews[currentReview].role}</p>
               </div>
             </div>
           </div>
